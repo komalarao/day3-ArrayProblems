@@ -1,6 +1,6 @@
 package com.bridgelabz.array_problems;
 import java.util.Scanner;
-public class OddPositionElementArray {
+public class DuplicateElementArray {
 
 	public static void main(String[] args) {
       Scanner elements =new Scanner(System.in);
@@ -12,8 +12,13 @@ public class OddPositionElementArray {
       for(int i=0;i<size;i++) {
     	  Numbers_Array[i] = elements.nextInt();
     	  
-      }for (int i=0;i<Numbers_Array.length;i+=2) {
-    	  System.out.println(Numbers_Array[i]);
+      }for (int i=0;i<Numbers_Array.length;i++) {
+    	 for(int j=i+1;j<Numbers_Array.length;j++) {
+    		 if(Numbers_Array[i]==Numbers_Array[j]) {
+    			 System.out.println(Numbers_Array[i]);
+    		 }
+    	 }
+    	  
       }
       
 	}
