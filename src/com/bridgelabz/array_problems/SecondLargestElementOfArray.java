@@ -1,6 +1,6 @@
 package com.bridgelabz.array_problems;
 import java.util.Scanner;
-public class AscendingOrderArray {
+public class SecondLargestElementOfArray {
 
 	public static void main(String[] args) {
       Scanner elements =new Scanner(System.in);
@@ -21,10 +21,9 @@ public class AscendingOrderArray {
     		 }
     	 }
     	  
-      }System.out.println("ascending order of array is:");
-      for(int i=0;i<Numbers_Array.length;i++) {
-    	  System.out.println(Numbers_Array[i]);
       }
+      System.out.println("second largest element of array is "+Numbers_Array[Numbers_Array.length-2]);
+     
       
 	}
 
