@@ -1,6 +1,6 @@
 package com.bridgelabz.array_problems;
 import java.util.Scanner;
-public class SecondLargestElementOfArray {
+public class ReverseOrderOfArray {
 
 	public static void main(String[] args) {
       Scanner elements =new Scanner(System.in);
@@ -12,17 +12,10 @@ public class SecondLargestElementOfArray {
       for(int i=0;i<size;i++) {
     	  Numbers_Array[i] = elements.nextInt();
     	  
-      }for (int i=0;i<Numbers_Array.length;i++) {
-    	 for(int j=i+1;j<Numbers_Array.length;j++) {
-    		 if(Numbers_Array[i]>Numbers_Array[j]) {
-    			 temporary = Numbers_Array[i];
-    			 Numbers_Array[i]=Numbers_Array[j];
-    			 Numbers_Array[j]=temporary;
-    		 }
-    	 }
-    	  
+      }System.out.println("reverse order of array:");
+      for (int i=Numbers_Array.length-1;i>=0;i--) {
+    	System.out.println(Numbers_Array[i]);
       }
-      System.out.println("second largest element of array is "+Numbers_Array[Numbers_Array.length-2]);
      
       
 	}
